@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -c https://web-api.qurankemenag.net/quran-ayah
