@@ -13,7 +13,7 @@ angka_arab='٠١٢٣٤٥٦٧٨٩'
 def angka_ke_angka_arab(angka):
 	return ''.join([angka_arab[int(a)] for a in str(angka)])
 
-ayat_arab = '\n' + '='*30 + '\njuz 1\n' + '-'*30 + '\nhalaman 1\n\n' + surat_arab + '\n'
+ayat_arab = '\n' + '='*30 + '\njuz 1\n' + '-'*30 + '\nhalaman 1\n\n' + 'سورة ' + surat_arab + '\n'
 juz = 1
 page = 1
 surah_id = 1
@@ -49,7 +49,7 @@ for id in range(6236):
 		ayat_arab = ayat_arab + '\n' + '-'*30 + '\nhalaman ' + str(page) + '\n\n'
 
 	if surah_id != surah_id_prev:
-		ayat_arab = ayat_arab +'\n' + surat_arab + '\n' + basmalah + '\n'
+		ayat_arab = ayat_arab +'\n' + 'سورة ' + surat_arab + '\n' + basmalah + '\n'
 
 	# print('halaman ', page, 'surat ke', surah_id, kitabah)
 	# print()
